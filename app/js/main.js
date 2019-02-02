@@ -129,3 +129,14 @@ $('.close-button').on('click', function(){
   $('body').removeClass('article-opened');
   var i = 0;
 });
+
+// start experimental 1
+
+$(document).keydown(function(e){
+  if (e.keyCode === 27 ){
+    $('body').removeClass('article-opened');
+    $('.project-view').scrollTop(0);
+  }
+});
+
+// end experimental 1
